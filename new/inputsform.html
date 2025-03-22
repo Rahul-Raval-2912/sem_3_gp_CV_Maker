@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;   
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            display: flex;
+            flex-direction: column;
+            align-items
+            : center;
+        }
+        .container{
+            height:auto;
+            width: 97vw;
+            animation: startani1 2s ease-in 0s 1 reverse;
+        }
+        .head{
+            width: 97vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #6c99ff;
+            color: #fff;
+        }
+        .head .logo{
+            height: 100px;
+            width: 200px;
+            background-image: url("logo3.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .head button{
+            padding: 10px 20px;
+            background-color: #6c99ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: medium;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        button:hover{
+            background-color: #4e7ad9;
+            box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+        }
+        .intro{
+            background-color: #dce6ff;
+            text-align: center;
+            padding: 50px 0;
+            color: #343a40;
+        }
+        .create{
+            background-color: #dce6ff;
+            text-align: center;
+            padding: 20px;
+        }
+        .create button{
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #798bdd;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+            font-size: x-large;
+            border-radius: 10px;
+        }
+        .create button:hover{
+            background-color: #bac5db;
+        }
+        @keyframes startani1{
+            0%{transform: translateY(0px);}
+            100%{transform: translateY(-100px);}
+        }
+        .form1{
+            background-color:  #f1f3f5;
+            padding: 20px;
+            width: 60vw;
+            border-radius: 8px;
+            margin: 30px;            
+        }
+        .form1 h3{
+            margin: 10px;
+            color:  #4e7ad9;
+            font-size: x-large;
+        }
+        input{
+            outline: none;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+            resize: none;
+            width: 93%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        textarea{
+            outline: none;
+            resize: none;
+            width: 93%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+            font-size: medium;
+        }
+        h5{
+            margin: 10px;
+            color:  #7793d1;
+            font-size: medium;
+        }
+        .btn{
+            display: flex;
+        }
+        .btn input{
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #4061f3;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+            font-size: x-large;
+            border-radius: 10px;
+        }
+        .footer{
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            width: 100vw;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .create a{
+            color: #4061f3;
+            text-decoration: none;
+        }
+        .footer i{
+            color: #fff;
+            margin-left: 10px;
+        }
+        .footer i:hover{
+            color: #4061f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="logo"></div>
+            <button id="home"><a href="homepage.html">Home</a></button>
+            <button id="about"><a href="about.html">About</a></button>
+            <button id="login"><a href="loginform.html">Login</a></button>
+        </div>
+        <div class="intro">
+            <h1>Create your proffesional Resume with CV maker</h1>
+            <p>Create your own <b><i>Professional Resume</i></b></p>
+        </div>
+        <div class="create">
+            <button><a href="inputsform.html">Create Now</a></button>
+        </div>
+    </div>
+    <div class="form1">
+        <form>
+            <label for="profilepic">
+                <h3>Choose Your Profile Picture:</h3><input type="file" id="fileInput" accept="image/*" class="btn btn-primary mt-3">
+            </label>
+            <br>
+            <label for="name">
+                <h3>Enter Your Name:</h3><input type="text" name="name" id="name">
+            </label>
+            <br>
+            <label for="intro">
+                <h3>Give your brif introduction:</h3>
+                <textarea name="intro" id="intro" rows="10"></textarea>
+            </label>
+            <label for="eduction">
+                <h3>What's Your Education:</h3>
+                <textarea name="education" id="education" rows="10"></textarea>
+            </label>
+            <label for="skills">
+                <h3>Enter Your Skills:</h3>
+                <input type="text" name="skills" id="skill1"><br>
+                <input type="text" name="skills" id="skill2"><br>
+                <input type="text" name="skills" id="skill3"><br>
+                <input type="text" name="skills" id="skill4"><br>
+                <input type="text" name="skills" id="skill5"><br>
+            </label>
+            <label for="details">
+                <h3>Personal Information:</h3>
+                <h5>Address: </h5><input type="text" id="address" class="details"><br>
+                <h5>Contact: </h5><input type="text" id="contact" class="details"><br>
+                <h5>E-mail: </h5><input type="text" id="email" class="details"><br>
+                <h5>DOB: </h5><input type="date" id="dob" class="details"><br>
+            </label>
+            <label for="refference">
+                <h3>Refferences:</h3>
+                <textarea name="refference" id="refference" rows="5"></textarea>
+            </label>
+            <label for="hobbie">
+                <h3>Hobbies and Ingterest:</h3>
+                <textarea name="hobbie" id="hobbie" rows="5"></textarea>
+            </label>
+            <div class="btn">
+                <input type="submit" id="submit" value="Submit">
+                <input type="reset" id="reset" value="Reset">
+            </div>
+        </form>    
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 CV Maker Website | All Rights Reserved</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

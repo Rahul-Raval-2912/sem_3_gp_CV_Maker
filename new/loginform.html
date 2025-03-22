@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV-Maker</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .login-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            height: 400px;
+        }
+        .login-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .login-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .login-form input {
+            width: 92%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-form button {
+            width: 93%;
+            padding: 10px;
+            margin: 0px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+        .form{
+           height: 555px;
+           width: auto;
+           padding: 80px 150px;
+           border-top-left-radius: 30%;
+           border-bottom-left-radius: 30%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .container{
+            height:auto;
+            width: 97vw;
+            animation: startani1 2s ease-in 0s 1 reverse;
+        }
+        .head{
+            width: 97vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #6c99ff;
+            color: #fff;
+        }
+        .head .logo{
+            height: 100px;
+            width: 200px;
+            background-image: url("logo3.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .head button{
+            padding: 10px 20px;
+            background-color: #6c99ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: medium;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        button:hover{
+            background-color: #4e7ad9;
+            box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+        }
+        .intro{
+            background-color: #dce6ff;
+            text-align: center;
+            padding: 50px 0;
+            color: #343a40;
+        }
+        .create{
+            background-color: #dce6ff;
+            text-align: center;
+            padding: 20px;
+        }
+        .create button{
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #798bdd;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+            font-size: x-large;
+            border-radius: 10px;
+        }
+        .create button:hover{
+            background-color: #bac5db;
+        }
+        @keyframes startani1{
+            0%{transform: translateY(0px);}
+            100%{transform: translateY(-100px);}
+        }
+        .footer{
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .create a{
+            color: #4061f3;
+            text-decoration: none;
+        }
+        .footer i{
+            color: #fff;
+            margin-left: 10px;
+        }
+        .footer i:hover{
+            color: #4061f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="logo"></div>
+            <button id="home"><a href="homepage.html">Home</a></button>
+            <button id="about"><a href="about.html">About</a></button>
+            <button id="login"><a href="loginform.html">Login</a></button>
+        </div>
+        <div class="intro">
+            <h1>Create your proffesional Resume with CV maker</h1>
+            <p>Create your own <b><i>Professional Resume</i></b></p>
+        </div>
+        <div class="create">
+            <button><a href="inputsform.html">Create Now</a></button>
+        </div>
+    </div>
+    <div class="form">
+        <form class="login-form" onsubmit="handleLogin(event)">
+            <h2>Login</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" id="btn">Login</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 CV Maker Website | All Rights Reserved</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+    </div>
+    <script>
+        const btn = document.getElementById("btn");
+        btn.addEventListener("click", function(event) {
+            pat_p="/\W+\d+/";
+            if(!pat_p.test(document.getElementById("password").value)){
+                alert("No special characters or numbers allowed!");
+                event.preventDefault();
+            }
+            else{
+                window.location.href = "homepage.html";
+            }
+        });
+    </script>
+</body>
+</html>

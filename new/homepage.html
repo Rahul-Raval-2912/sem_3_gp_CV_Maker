@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV Macker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f7f7f7;
+            color: #333;
+          }
+        .container1{
+            height:auto;
+            width: 97vw;
+            animation: startani1 2s ease-in 0s 1 reverse;
+        }
+        .head{
+            width: 97vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #6c99ff;
+            color: #fff;
+        }
+        .head .logo{
+            height: 100px;
+            width: 200px;
+            background-image: url("logo3.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .head button{
+            padding: 10px 20px;
+            background-color: #6c99ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: medium;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        button:hover{
+            background-color: #4e7ad9;
+            box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+        }
+        .intro{
+            background-color: #dce6ff;
+            text-align: center;
+            padding: 50px 0;
+            color: #343a40;
+        }
+        .create{
+            background-color: #dce6ff;
+            text-align: center;
+            padding: 20px;
+        }
+        .create button{
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #798bdd;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+            font-size: x-large;
+            border-radius: 10px;
+        }
+        .create button:hover{
+            background-color: #bac5db;
+        }
+        @keyframes startani1{
+            0%{transform: translateY(0px);}
+            100%{transform: translateY(-100px);}
+        }
+        .ratelogo{
+            height: 80px;
+            width: 80px;
+            background-image: url("rating.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 40%;
+        }
+        .info1,.info2,.info3{
+            margin: 60px 180px;
+            width: 900px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d5e2f8;
+            box-shadow: 0 15px 15px rgba(0, 0.3, 0.5, 0.3);
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        .info1:hover,.info2:hover,.info3:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(0, 0.3, 0.5, 0.5);
+        }
+        .requirelogo{
+            height: 80px;
+            width: 80px;
+            background-image: url("reqirement.jpeg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 40%;
+        }
+
+        .organiselogo{
+            height: 80px;
+            width: 80px;
+            background-image: url("organise.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 40%;
+        }
+        .footer{
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .create a{
+            color: #4061f3;
+            text-decoration: none;
+        }
+        .footer i{
+            color: #fff;
+            margin-left: 10px;
+        }
+        .footer i:hover{
+            color: #4061f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="logo"></div>
+            <button id="home"><a href="homepage.html">Home</a></button>
+            <button id="about"><a href="about.html">About</a></button>
+            <button id="login"><a href="loginform.html">Login</a></button>
+        </div>
+        <div class="intro">
+            <h1>Create your proffesional Resume with CV maker</h1>
+            <p>Create your own <b><i>Professional Resume</i></b></p>
+        </div>
+        <div class="create">
+            <button><a href="inputsform.html">Create Now</a></button>
+        </div>
+    </div>
+    <div class="info">
+        <div class="info1">
+            <div class="rate">
+                <div class="ratelogo"></div>
+            </div>
+            <div class="rateinfo">
+                <h3>Quick and easy Resume Builder</h3>
+                <br>
+                <pre>
+                    With our online CV maker, it is simple for anyone to quickly create a professional resume. 
+                    Enter your personal details and begin filling out your resume content. 
+                    Finally, choose one of our 12 available resume layouts.
+                </pre>
+            </div>
+        </div>
+        <div class="info2">
+            <div class="require">
+                <div class="requirelogo"></div>
+            </div>
+            <div class="requireinfo">
+                <h3>More likely to Land a Job</h3>
+                <br>
+                <pre>
+                    With a representative and professional resume, you will stand out amongst all other applicants.
+                    You are probably more likely to be invited to an interview with an professional Resume.
+                </pre>
+            </div>
+        </div>
+        <div class="info3">
+            <div class="organise">
+                <div class="organiselogo"></div>
+            </div>
+            <div class="organiseinfo">
+                <h3>organize your Application</h3>
+                <br>
+                <pre>
+                    Often, it is important to be able to tailor your resume based on the job you
+                     wish to apply for.
+                    With CV maker, you can create and manage several different resumes in an 
+                    organised way through your own personal account hub.
+                </pre>
+            </div>
+        </div>
+        <div class="intro">
+            <p>With CV maker, you can quickly and easily create a distinctive and professional resume within 15 minutes.</p>
+        </div>
+        <div class="create">
+            <button><a href="inputsform.html">Create Now</a></button>
+        </div>
+       
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 CV Maker Website | All Rights Reserved</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+    </div>
+</body>
+</html>
